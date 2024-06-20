@@ -1,6 +1,11 @@
 <template>
-	<div>
-		<h1>Welcome to the homepage changes</h1>
-		<!-- <AppAlert> This is an auto-imported component </AppAlert> -->
-	</div>
+  <Tutorial/>
 </template>
+
+<script lang="ts">
+import Vue from 'vue'
+
+export default Vue.extend({
+  name: 'IndexPage'
+})
+</script>
