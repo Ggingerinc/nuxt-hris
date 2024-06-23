@@ -14,6 +14,7 @@
         </select>
         <p v-else>Loading...</p>
       </div>
+      <button @click="create" type="button" class="w-full btn btn-primary mt-[14px]"></button>
       <NuxtLink :to="{name: 'companies-id', params: {id: this.selectedCompany}}"
                 class="w-full btn btn-primary mt-[14px]">Continue
       </NuxtLink>
@@ -32,6 +33,9 @@ export default {
   },
   async fetch () {
     this.companies = await this.$axios.get('/company?limit=100')
+  },
+  async createCompany() {
+    return ""
   }
 }
 </script>
